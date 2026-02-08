@@ -1,0 +1,28 @@
+🧠 Problem Summary
+You’re given a table World with these columns:
+name
+continent
+area
+population
+gdp
+
+A country is considered big if:
+area ≥ 3,000,000 OR
+population ≥ 25,000,000
+
+You need to return:
+👉 name, population, area of all big countries.
+
+🧪 Example Logic
+
+If a country has:
+Area = 5,000,000 but population = 10,000,000 → ✅ included
+Area = 1,000,000 but population = 30,000,000 → ✅ included
+Area = 1,000,000 and population = 5,000,000 → ❌ not included
+
+
+-- 595. Big Countries
+SELECT name, population, area
+FROM World
+WHERE area >= 3000000
+   OR population >= 25000000;

@@ -30,6 +30,6 @@ Each row of this table contains the id of an employee and their respective bonus
 SELECT e.name, b.bonus
 FROM Employee e
 LEFT JOIN Bonus b
-ON e.employee_id = b.employee_id
+ON e.empId = b.empId
 WHERE b.bonus < 1000
    OR b.bonus IS NULL;
